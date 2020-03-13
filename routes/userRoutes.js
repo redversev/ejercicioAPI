@@ -16,5 +16,8 @@ api.get('/saludos',(req,res)=>{
 //Exportar para poder usarlos en otro lado.
 api.post('/createUser', UserController.create);
 api.put('/updateUser/:id', UserController.update);
+api.post('/loginUser', UserController.login);
+api.get('/getUsers', UserController.getUsers);
+
 
 module.exports = api;
